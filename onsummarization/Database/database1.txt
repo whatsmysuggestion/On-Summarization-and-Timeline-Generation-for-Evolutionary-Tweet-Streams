@@ -1,0 +1,53 @@
+create database project3;
+
+use project3;
+
+CREATE TABLE admin (
+username VARCHAR(50)default NULL,
+password VARCHAR(50)
+) ;
+
+insert into admin values ('admin','admin');
+
+CREATE TABLE user(
+  
+id int(11) NOT NULL auto_increment,
+ 
+username varchar(45) default NULL,
+ 
+password varchar(45) default NULL,
+  
+email varchar(45) default NULL,
+ 
+mobile varchar(45) default NULL,
+ 
+address varchar(45) default NULL,
+  
+dob varchar(45) default NULL,
+ 
+gender varchar(45) default NULL,
+ 
+pincode varchar(45) default NULL,
+ 
+status varchar(45) default NULL,
+  
+image longblob,
+ 
+PRIMARY KEY  (id)
+) ;
+
+create table requests(
+
+id int(11) NOT NULL auto_increment,
+
+reqfrom text,
+
+reqto text,
+
+dt text,
+
+status text,
+
+PRIMARY KEY  (id)
+
+);
